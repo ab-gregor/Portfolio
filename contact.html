@@ -5,64 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
-        *{
-            margin: 0;
-            margin-left: 2px;
-        }
-        nav{
-            margin: 0;
-            height: 40px;
-        }
-        a{
-            text-decoration: none;
-            
-        }
-        li{
-            padding: 5px;
-        }
-        .navi{
-            display: inline-block;
-            padding: 10px;
-            
-        }
-        ul{
-            text-align: right;
-            margin-right: 20px;
-        }
-        .info{
-            vertical-align: top;
-            display: inline-block;
-        }
-        h4{
-            padding: 8px;
-        }
-        input{
-            padding: 5px;
-            
-            margin: 10px;
-        }
-        
-    </style>
+    <link href="style.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
 </head>
 <body>
-    <nav style="background-color: antiquewhite;">
-        <ul>
-           <li class="navi"><a href="C:\Users\VX322WZ\OneDrive - EY\Documents\GitHub\Portfolio\portfolio.html">Home</a> </li>
-           <li class="navi"><a href="C:\Users\VX322WZ\OneDrive - EY\Documents\GitHub\Portfolio\contact.html">Contact</a> </li>
-        </ul>     
-</nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="portfolio.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-<div>
-    <br>
-    <h3 style="padding: 5px;">Contact Me</h3>
-    <form action="">
-        <input type="text" placeholder="Enter your name"><br>
-        <input type="tel" placeholder="Enter your contact number"><br>
-        <input type="email" placeholder="Enter your email id"><br>
-        <textarea name="" cols="50" rows="20" placeholder="Enter your text"></textarea><br>
-        <input type="submit"><br>
+      <div class="row" >
+        <div class="col-sm-6 mb-3 mb-sm-0" style="display: inline-block;">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" style="display: inline-block;">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
 
-    </form>
-</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
